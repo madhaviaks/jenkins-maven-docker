@@ -3,9 +3,9 @@ pipeline {
 
     stages {
 
-        stage('Hello') {
+        stage('Build Maven Project') {
             steps {
-                echo 'Hello from Jenkins Pipeline'
+                sh './mvnw clean package'
             }
         }
 
